@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SocketChannel">
+      <UniqueIdentifier>{6956e90a-f35e-421c-a994-7a2aa34e777b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{1cc98378-bd47-4969-899a-b9c0e52cae87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OrderBook">
+      <UniqueIdentifier>{db73831d-c13e-4148-9e38-4edba37f526b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LogSystem">
+      <UniqueIdentifier>{cc26ddae-6c40-4f1c-86e5-ecc1abbca767}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMatchEngine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="COrderKey.cpp">
+      <Filter>OrderBook</Filter>
+    </ClCompile>
+    <ClCompile Include="COrderBook.cpp">
+      <Filter>OrderBook</Filter>
+    </ClCompile>
+    <ClCompile Include="COrder.cpp">
+      <Filter>OrderBook</Filter>
+    </ClCompile>
+    <ClCompile Include="CMatchResult.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CMatchRecord.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CMatchTest.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogger.cpp">
+      <Filter>LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CServerChannel.cpp">
+      <Filter>SocketChannel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatchEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CDirection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="COrderKey.h">
+      <Filter>OrderBook</Filter>
+    </ClInclude>
+    <ClInclude Include="COrderBook.h">
+      <Filter>OrderBook</Filter>
+    </ClInclude>
+    <ClInclude Include="COrder.h">
+      <Filter>OrderBook</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatchResult.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatchRecord.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatchTest.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogger.h">
+      <Filter>LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CServerChannel.h">
+      <Filter>SocketChannel</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

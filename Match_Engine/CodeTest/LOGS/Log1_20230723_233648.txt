@@ -1,0 +1,854 @@
+[ Here Is The Debug Log File ]
+==================================================================
+[2023-07-23 23:37:08] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2082.34/1
+[2023-07-23 23:37:08] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 0
+
+[2023-07-23 23:37:08] MATCH_ENGINE        | CMatchEngine::cmrProcessOrder No Element Returned
+
+[2023-07-23 23:37:08] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== End Of The Order Book
+
+[2023-07-23 23:37:08] ORDER_BOOK          | COrderBook::bAdd BUY_BOOK Price: 2082.34, Amount: 1
+[2023-07-23 23:37:08] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:08] ORDER               | COrder::to_string ID: 1, Price: 2082.34, Direction: BUY, Amount: 1
+
+[2023-07-23 23:37:08] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== End Of The Order Book
+
+[2023-07-23 23:37:08] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:08] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:08] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:08] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 1, Price: 2082.34, Direction: BUY, Amount: 1
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:09] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: sell/2087.6/2
+[2023-07-23 23:37:09] ORDER_BOOK          | COrderBook::getFirst BUY Book: Size: 1
+
+[2023-07-23 23:37:09] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== End Of The Order Book
+
+[2023-07-23 23:37:09] ORDER_BOOK          | COrderBook::bAdd SELL_BOOK Price: 2087.6, Amount: 2
+[2023-07-23 23:37:09] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:09] ORDER               | COrder::to_string ID: 2, Price: 2087.6, Direction: SELL, Amount: 2
+
+[2023-07-23 23:37:09] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:2, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:09] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:09] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:2, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:09] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:09] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 2, Price: 2087.6, Direction: SELL, Amount: 2
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:2, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:10] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2087.8/1
+[2023-07-23 23:37:10] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 1
+
+[2023-07-23 23:37:10] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:10] ORDER               | COrder::to_string ID: 3, Price: 2087.8, Direction: BUY, Amount: 1
+
+[2023-07-23 23:37:10] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:10] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:10] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:10] MATCH_RECORD        |  [ 2087.6, 1 ] 
+[2023-07-23 23:37:10] MATCH_RESULT        |  [ 1 Match Records! ]
+***  [ 2087.6, 1 ]  ***
+
+[2023-07-23 23:37:10] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 3, Price: 2087.8, Direction: BUY, Amount: 1
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+ [ 1 Match Records! ]
+***  [ 2087.6, 1 ]  ***
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:11] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2085.01/5
+[2023-07-23 23:37:11] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 1
+
+[2023-07-23 23:37:11] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:11] ORDER_BOOK          | COrderBook::bAdd BUY_BOOK Price: 2085.01, Amount: 5
+[2023-07-23 23:37:11] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:11] ORDER               | COrder::to_string ID: 4, Price: 2085.01, Direction: BUY, Amount: 5
+
+[2023-07-23 23:37:11] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:11] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:11] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:11] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:11] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 4, Price: 2085.01, Direction: BUY, Amount: 5
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:12] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: sell/2088.02/3
+[2023-07-23 23:37:12] ORDER_BOOK          | COrderBook::getFirst BUY Book: Size: 2
+
+[2023-07-23 23:37:12] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:12] ORDER_BOOK          | COrderBook::bAdd SELL_BOOK Price: 2088.02, Amount: 3
+[2023-07-23 23:37:12] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:12] ORDER               | COrder::to_string ID: 5, Price: 2088.02, Direction: SELL, Amount: 3
+
+[2023-07-23 23:37:12] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:12] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:12] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:12] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:12] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 5, Price: 2088.02, Direction: SELL, Amount: 3
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:13] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: sell/2087.60/6
+[2023-07-23 23:37:13] ORDER_BOOK          | COrderBook::getFirst BUY Book: Size: 2
+
+[2023-07-23 23:37:13] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:13] ORDER_BOOK          | COrderBook::bAdd SELL_BOOK Price: 2087.6, Amount: 6
+[2023-07-23 23:37:13] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:13] ORDER               | COrder::to_string ID: 6, Price: 2087.6, Direction: SELL, Amount: 6
+
+[2023-07-23 23:37:13] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:13] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:13] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:13] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:13] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 6, Price: 2087.6, Direction: SELL, Amount: 6
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:14] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2081.11/7
+[2023-07-23 23:37:14] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 2
+
+[2023-07-23 23:37:14] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:14] ORDER_BOOK          | COrderBook::bAdd BUY_BOOK Price: 2081.11, Amount: 7
+[2023-07-23 23:37:14] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:14] ORDER               | COrder::to_string ID: 7, Price: 2081.11, Direction: BUY, Amount: 7
+
+[2023-07-23 23:37:14] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:14] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:14] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:14] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:14] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 7, Price: 2081.11, Direction: BUY, Amount: 7
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:15] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2086.0/3
+[2023-07-23 23:37:15] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 3
+
+[2023-07-23 23:37:15] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:15] ORDER_BOOK          | COrderBook::bAdd BUY_BOOK Price: 2086, Amount: 3
+[2023-07-23 23:37:15] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:15] ORDER               | COrder::to_string ID: 8, Price: 2086, Direction: BUY, Amount: 3
+
+[2023-07-23 23:37:15] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:15] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:15] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:15] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:15] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 8, Price: 2086, Direction: BUY, Amount: 3
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:2, Price:2087.6, Amount:1, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:16] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2088.33/1
+[2023-07-23 23:37:16] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 4
+
+[2023-07-23 23:37:16] ORDER_BOOK          | COrderBook::bRemove SELL_BOOK Price: 2087.6, Amount: 0
+[2023-07-23 23:37:16] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:16] ORDER               | COrder::to_string ID: 9, Price: 2088.33, Direction: BUY, Amount: 1
+
+[2023-07-23 23:37:16] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:16] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:16] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:16] MATCH_RECORD        |  [ 2087.6, 1 ] 
+[2023-07-23 23:37:16] MATCH_RESULT        |  [ 1 Match Records! ]
+***  [ 2087.6, 1 ]  ***
+
+[2023-07-23 23:37:16] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 9, Price: 2088.33, Direction: BUY, Amount: 1
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+ [ 1 Match Records! ]
+***  [ 2087.6, 1 ]  ***
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:17] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: sell/2086.54/2
+[2023-07-23 23:37:17] ORDER_BOOK          | COrderBook::getFirst BUY Book: Size: 4
+
+[2023-07-23 23:37:17] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:17] ORDER_BOOK          | COrderBook::bAdd SELL_BOOK Price: 2086.54, Amount: 2
+[2023-07-23 23:37:17] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:17] ORDER               | COrder::to_string ID: 10, Price: 2086.54, Direction: SELL, Amount: 2
+
+[2023-07-23 23:37:17] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:17] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:17] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:17] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:17] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 10, Price: 2086.54, Direction: SELL, Amount: 2
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:18] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: sell/2086.55/5
+[2023-07-23 23:37:18] ORDER_BOOK          | COrderBook::getFirst BUY Book: Size: 4
+
+[2023-07-23 23:37:18] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:18] ORDER_BOOK          | COrderBook::bAdd SELL_BOOK Price: 2086.55, Amount: 5
+[2023-07-23 23:37:18] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:18] ORDER               | COrder::to_string ID: 11, Price: 2086.55, Direction: SELL, Amount: 5
+
+[2023-07-23 23:37:18] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:11, Price:2086.55, Amount:5, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:18] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:18] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:11, Price:2086.55, Amount:5, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:18] MATCH_RESULT        | CMatchResult::to_string [0 Match Records Found!]
+[2023-07-23 23:37:18] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 11, Price: 2086.55, Direction: SELL, Amount: 5
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:10, Price:2086.54, Amount:2, Direction:SELL }
+=== Order: { ID:11, Price:2086.55, Amount:5, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+MATCH_RESULT [ 0 Match Records Found! ]
+
+-------------------------------------------
+=============================================End=====================================
+
+[2023-07-23 23:37:19] LOG_SERVER          | CServerChannel::OnMsgReceived Message Received From Clients: buy/2086.55/3
+[2023-07-23 23:37:19] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 4
+
+[2023-07-23 23:37:19] ORDER_BOOK          | COrderBook::bRemove SELL_BOOK Price: 2086.54, Amount: 0
+[2023-07-23 23:37:19] ORDER_BOOK          | COrderBook::getFirst SELL Book: Size: 4
+
+[2023-07-23 23:37:19] MATCH_ENGINE        | Matching Done!
+[2023-07-23 23:37:19] ORDER               | COrder::to_string ID: 12, Price: 2086.55, Direction: BUY, Amount: 3
+
+[2023-07-23 23:37:19] ORDER_BOOK          | 
+=== Items of The Sell Book
+=== Order: { ID:11, Price:2086.55, Amount:4, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+
+[2023-07-23 23:37:19] ORDER_BOOK          | 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+
+[2023-07-23 23:37:19] MATCH_ENGINE        | 
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:11, Price:2086.55, Amount:4, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+
+[2023-07-23 23:37:19] MATCH_RECORD        |  [ 2086.54, 2 ] 
+[2023-07-23 23:37:19] MATCH_RECORD        |  [ 2086.55, 1 ] 
+[2023-07-23 23:37:19] MATCH_RESULT        |  [ 2 Match Records! ]
+***  [ 2086.54, 2 ] ,  [ 2086.55, 1 ]  ***
+
+[2023-07-23 23:37:19] MATCH_TEST          | 
+=============================================Start===================================
+
+-------------------------------------------
+COrder::to_string ID: 12, Price: 2086.55, Direction: BUY, Amount: 3
+
+-------------------------------------------
+--- Sell Book: 
+=== Items of The Sell Book
+=== Order: { ID:11, Price:2086.55, Amount:4, Direction:SELL }
+=== Order: { ID:6, Price:2087.6, Amount:6, Direction:SELL }
+=== Order: { ID:5, Price:2088.02, Amount:3, Direction:SELL }
+=== End Of The Order Book
+----------
+--- The Market Price: 0
+----------
+--- Buy Book: 
+=== Items of The Buy Book
+=== Order: { ID:8, Price:2086, Amount:3, Direction:BUY }
+=== Order: { ID:4, Price:2085.01, Amount:5, Direction:BUY }
+=== Order: { ID:1, Price:2082.34, Amount:1, Direction:BUY }
+=== Order: { ID:7, Price:2081.11, Amount:7, Direction:BUY }
+=== End Of The Order Book
+-------------------------------------------
+ [ 2 Match Records! ]
+***  [ 2086.54, 2 ] ,  [ 2086.55, 1 ]  ***
+
+-------------------------------------------
+=============================================End=====================================
+
